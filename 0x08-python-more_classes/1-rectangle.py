@@ -23,16 +23,16 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self._width = value
 
-        @property
-        def height(self):
-            """Getter for the private instance attribute height"""
-            return self._height
+    @property
+    def height(self):
+        """Getter for the private instance attribute height"""
+        return self._height
 
-        @height.setter
-        def height(self, value):
-            """Setter for the private instance attribute height"""
-            if type(value) is not int:
-                raise TypeError("height must be an integer")
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            self._height = value
+    @height.setter
+    def height(self, value):
+        """Setter for the private instance attribute height"""
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self._height = value
