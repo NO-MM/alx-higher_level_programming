@@ -20,8 +20,8 @@ class Rectangle:
         if type(value) is not int:
             raise TypeEror("width must be an integer")
         if value < 0:
-            raise valueError("height mut be >= 0")
-        self._height = value
+            raise valueError("width must be >= 0")
+        self._width = value
 
         @property
         def height(self):
