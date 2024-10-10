@@ -9,7 +9,7 @@ class Rectangle:
 
     '''int: The number of active instances.'''
 
-    print_symbol ='#'
+    print_symbol = '#'
     '''type: Print symbol, can be anytype.'''
 
     def __init__(self, width=0, height=0):
@@ -59,7 +59,8 @@ class Rectangle:
         """Returns string representation"""
         if not self.width or not self.height:
             return ""
-        return ((str(self.print_symbol) * self.width + "\n") * self.height)[:-1]
+        return ((str(self.print_symbol) * self.width + "\n") *
+                self.height)[:-1]
 
     def perimeter(self):
         """Returns the perimeter of the rectangle"""
