@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Rectangle"""
 
+
 class Rectangle:
     """Representation of a Rectangle"""
 
@@ -64,11 +65,11 @@ class Rectangle:
         """Returns the perimeter of the rectangle"""
         if self._width == 0 or self._height == 0:
             return 0
-        return (self._width *2) + (self._height *2)
+        return (self._width * 2) + (self._height * 2)
 
     def __repr__(self):
         """Returns a string represantation of the rectangle for production"""
-        return"Rectangle({:d}, {:d})".format(self._width, self._height)
+        return "Rectangle({:d}, {:d})".format(self._width, self._height)
 
     def __del__(self):
         """Print a message for every deletion of a rectangle"""
