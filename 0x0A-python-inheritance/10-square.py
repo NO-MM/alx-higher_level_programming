@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for Rectangle class."""
+"""Module for Square class."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
@@ -12,5 +12,5 @@ class Square(Rectangle):
         super().__init__(size, size)
 
     def area(self):
-        """Method for area of square."""
+        """Method for calculating the  area of square."""
         return self._size ** 2

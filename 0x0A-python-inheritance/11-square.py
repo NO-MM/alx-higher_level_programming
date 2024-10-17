@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for Rectangle class."""
+"""Module for Square class."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
@@ -18,4 +18,3 @@ class Square(Rectangle):
     def _str_(self):
         """Returns string representation of this square."""
         return "[square] " + str(self._size)
-
