@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Defining to_json_string function"""
+"""Defining append_write function"""
 
 
-import json
+def append_write(filename="", text=""):
+    """This function appends text to a file and returns the number of characters added"""
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)
 
-
-def to_json_string(my_obj):
-    """return json representation of an object"""
-    return json.dumps(my_obj)
